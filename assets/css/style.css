@@ -1,0 +1,125 @@
+:root {
+    --gold:#FFD600;
+    --element-spacing: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0), rgb(94, 104, 131)) fixed;
+}
+
+p, a {
+    font-size: 18px;
+    color: white;
+}
+
+h1 {
+    font-size: 72px;
+    color: var(--gold);
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
+}
+
+a {
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+.divider {
+    height: 1px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: var(--element-spacing);
+    background-color: white;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1100px;
+    min-width: 800px;
+    margin: auto;
+    margin-bottom: var(--element-spacing);
+}
+
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/************ NAV MENU ************/
+
+#nav-menu {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: var(--element-spacing);
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/************ INTRO ************/
+
+#intro {
+    margin-bottom: 115px;
+    display: grid;
+    grid-template-columns: 68% 30%;
+    justify-content: space-between;
+}
+
+#intro-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#intro-img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 15px 15px var(--gold);
+}
+
+/************ ABOUT ************/
+
+#about p {
+    margin-bottom: 30px;
+}
+
+/************ PROJECTS ************/
+
+.project-display {
+    border: 3px solid white;
+    padding: 30px;
+    width: 100%;
+    max-width: 1100px;
+    min-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/************ CONTACT ************/
+
+#contact {
+    padding-bottom: 100px;
+}
+
+#contact h2 {
+    margin-bottom: 30px;  
+}
